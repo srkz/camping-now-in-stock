@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership — Burbank Amateur Radio Club</title>
+  <meta name="description"
+        content="BARC membership is free and open to anyone. Here's how to join, what to expect, and how to get on the air." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="masthead" role="banner">
+    <div class="container masthead__inner">
+      <a class="brand" href="index.html" aria-label="Burbank Amateur Radio Club home">
+        <img class="brand__mark" src="images/logo.svg" alt="" width="92" height="58" />
+        <span>
+          <span class="brand__name">Burbank Amateur Radio Club</span>
+          <span class="brand__call" aria-label="Club call sign pending">CALL SIGN&nbsp;PENDING &middot; BARC</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="membership.html" aria-current="page">Membership</a></li>
+          <li><a class="nav__link" href="repeaters.html">Repeaters</a></li>
+          <li><a class="nav__link" href="calendar.html">Calendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero__eyebrow">JOIN US &mdash; 73</p>
+      <h1 id="hero-title">Membership is free. Always.</h1>
+      <p class="hero__lede">
+        Whether you&rsquo;re an Extra with a loaded shack or you just found an old scanner
+        in the garage, you&rsquo;re welcome at BARC. There are no dues and no gatekeeping.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="who-can-join">
+      <h2 id="who-can-join" class="section__title">Who can join?</h2>
+      <div class="grid-2">
+        <div class="stack">
+          <p>
+            Anyone interested in amateur radio. Really. You don&rsquo;t need a license,
+            a fancy radio, or prior experience. Our members include:
+          </p>
+          <ul>
+            <li>Licensed hams at every class &mdash; Technician, General, Extra</li>
+            <li>Unlicensed folks studying for their first exam</li>
+            <li>Shortwave listeners and scanner enthusiasts</li>
+            <li>Makers, tinkerers, and DIY antenna builders</li>
+            <li>Emergency-communications volunteers (ARES, RACES, CERT)</li>
+            <li>Families &mdash; kids at meetings and on the air are welcome and encouraged</li>
+          </ul>
+        </div>
+        <aside class="stack" aria-label="Membership at a glance">
+          <dl class="spec">
+            <dt>Dues</dt><dd>Free</dd>
+            <dt>License required</dt><dd>No</dd>
+            <dt>Age minimum</dt><dd>None</dd>
+            <dt>Residency</dt><dd>Not required</dd>
+            <dt>Renewal</dt><dd>Annual (by email)</dd>
+          </dl>
+          <div class="callout" role="note">
+            <strong>A note for parents:</strong>
+            Meetings and nets are family-friendly. Minors are always welcome,
+            accompanied or not, and we follow common-sense child-safety practices
+            at in-person events.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="what-you-get">
+      <h2 id="what-you-get" class="section__title">What you get</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>Repeater access</h3>
+          <p>
+            Use of the club&rsquo;s planned UHF repeater on the Tower building,
+            including the monthly net and trivia nets.
+          </p>
+        </li>
+        <li class="card">
+          <h3>A newsletter</h3>
+          <p>
+            A short monthly email with net reminders, upcoming events,
+            propagation notes, and a members&rsquo; swap &amp; shop section.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Study help</h3>
+          <p>
+            Free Technician and General study sessions led by licensed members,
+            plus practice exams and help scheduling a VE session.
+          </p>
+        </li>
+        <li class="card">
+          <h3>An Elmer</h3>
+          <p>
+            On request, we&rsquo;ll pair you with an experienced ham who can help you
+            pick a first radio, put up an antenna, and make your first contacts.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Event invites</h3>
+          <p>
+            First dibs on Field Day crews, POTA outings, parade comms volunteering,
+            and club social events.
+          </p>
+        </li>
+        <li class="card">
+          <h3>A roster listing</h3>
+          <p>
+            Optional inclusion in the members&rsquo; roster (call sign, preferred name,
+            and one contact method &mdash; nothing more, ever).
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="how-to-join">
+      <h2 id="how-to-join" class="section__title">How to join</h2>
+      <p>
+        Because we&rsquo;re still organizing, sign-up is by email for now.
+        Send us a note and we&rsquo;ll add you to the club roster and the monthly newsletter.
+      </p>
+
+      <!--
+        The form below is intentionally a plain mailto handoff.
+        When we stand up a real backend, swap the action to a POST endpoint
+        and keep the same field names so nothing downstream has to change.
+      -->
+      <form class="form"
+            action="mailto:join@example.invalid"
+            method="post"
+            enctype="text/plain"
+            aria-describedby="form-note">
+        <p id="form-note" class="lede">
+          All fields except name and email are optional.
+        </p>
+
+        <div>
+          <label for="m-name">Name <span aria-hidden="true">*</span></label>
+          <input id="m-name" name="name" type="text" autocomplete="name" required />
+        </div>
+
+        <div>
+          <label for="m-email">Email <span aria-hidden="true">*</span></label>
+          <input id="m-email" name="email" type="email" autocomplete="email" required />
+          <small>We&rsquo;ll only use this for club business.</small>
+        </div>
+
+        <div>
+          <label for="m-call">Call sign</label>
+          <input id="m-call" name="callsign" type="text"
+                 inputmode="text" autocomplete="off"
+                 pattern="[A-Za-z0-9/]{3,10}"
+                 placeholder="e.g. KI6XYZ" />
+          <small>Leave blank if unlicensed.</small>
+        </div>
+
+        <div>
+          <label for="m-class">License class</label>
+          <select id="m-class" name="license_class">
+            <option value="">Prefer not to say / none yet</option>
+            <option value="technician">Technician</option>
+            <option value="general">General</option>
+            <option value="extra">Extra</option>
+            <option value="other">Other / foreign</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="m-interest">Interests</label>
+          <textarea id="m-interest" name="interests" rows="4"
+                    placeholder="FM repeaters, CW, POTA, digital modes, emergency comms..."></textarea>
+        </div>
+
+        <fieldset>
+          <legend>Anything else?</legend>
+          <p>
+            <input id="m-elmer" name="wants_elmer" type="checkbox" value="yes" />
+            <label for="m-elmer" style="display:inline">I&rsquo;d like to be paired with an Elmer (mentor)</label>
+          </p>
+          <p>
+            <input id="m-roster" name="roster_ok" type="checkbox" value="yes" checked />
+            <label for="m-roster" style="display:inline">It&rsquo;s OK to list me in the members&rsquo; roster</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button class="btn" type="submit">Send membership request</button>
+        </p>
+      </form>
+
+      <p class="lede">
+        Or email us directly at
+        <a href="mailto:join@example.invalid"><span class="mono">join@example.invalid</span></a>.
+        A real club address will be announced once BARC is formally incorporated.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="code-of-conduct">
+      <h2 id="code-of-conduct" class="section__title">Code of conduct</h2>
+      <p>
+        BARC follows the ARRL&rsquo;s
+        <a href="https://www.arrl.org/amateurs-code" rel="external noopener">Amateur&rsquo;s Code</a>
+        and a few simple additions:
+      </p>
+      <ul>
+        <li>Be considerate on the air and at meetings.</li>
+        <li>No harassment, slurs, or politics on the repeater.</li>
+        <li>Keep it family-friendly &mdash; assume kids are listening, because they are.</li>
+        <li>Help newcomers. You were one too, once.</li>
+        <li>If something goes wrong, tell a club officer. We&rsquo;ll listen.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <h4>Burbank Amateur Radio Club</h4>
+        <p>
+          Serving Burbank, California and the media district.
+          A not-for-profit, all-volunteer amateur radio club.
+        </p>
+        <p class="footer__sign">-.-. --.- &nbsp; 73 &nbsp; de &nbsp; BARC</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="repeaters.html">Repeaters</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://www.arrl.org/" rel="external noopener">ARRL</a></li>
+          <li><a href="https://laacarc.org/" rel="external noopener">LA Area Council of ARCs</a></li>
+          <li><a href="https://www.scrrba.org/" rel="external noopener">SCRRBA</a></li>
+          <li><a href="https://www.repeaterbook.com/" rel="external noopener">RepeaterBook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
